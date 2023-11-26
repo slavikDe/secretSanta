@@ -1,56 +1,128 @@
+/* dm-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/dm-sans-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* dm-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/dm-sans-v14-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* yeseva-one-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/yeseva-one-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 * {
   padding: 0;
   margin: 0;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+h1 {
+  font-family: "Yeseva One";
+  font-size: 75px;
+  font-weight: 400;
+}
+h2 {
+  font-family: "Yeseva One";
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
 }
 
-.hero {
+ul {
+  list-style-type: none;
+}
+
+.section-hero {
   width: 100%;
-  height: 100vh;
-
-  background: url(./img/background.png), lightgray 50% / cover no-repeat;
-
-  border-radius: 0px 0px 25px 25px;
-  opacity: 0.7;
 }
 
-::-webkit-scrollbar {
-  width: 0;
-}
+.wrapper {
+  width: 100%;
+  max-width: 1369px;
+  margin: 0 auto;
 
-.navbar {
-  width: 1369px;
+  align-items: center;
+  justify-content: center;
+}
+.hero-nav {
+  display: flex;
   height: 120px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: space-between;
+  align-items: flex-end;
   border: 1px solid black;
 }
-
-.mask {
-  width: 62px;
-  height: 62px;
-  flex-shrink: 0;
-}
-
-.logo {
-  width: 48px;
-  height: 53px;
-}
-
-#logo_text {
+.hero-nav-li {
   display: inline;
+  margin: 0;
+  margin-right: 80px;
   color: #000;
-  font-family: "DM Sans";
-  font-size: 22px;
-  font-style: normal;
+  font-size: 18px;
   font-weight: 700;
-  line-height: normal;
 }
-
-#logo_text span {
+.hero-nav-li:hover {
   color: #00873e;
-  font-family: "DM Sans";
-  font-size: 22;
-  font-style: normal;
+}
+.hero-nav-li:last-child {
+  margin-right: 0px;
+}
+.logo {
+  display: flex;
+  align-items: flex-end;
+}
+.logo p {
+  padding-bottom: 16px;
+}
+.top-nav {
+  display: flex;
+  height: 96px;
+  margin-bottom: 24px;
+  align-items: flex-end;
+}
+.buttons-hero {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+.logo p {
+  font-size: 22px;
   font-weight: 700;
-  line-height: normal;
+}
+.logo p span {
+  color: #00873e;
+  font-size: 22px;
+  font-weight: 700;
+}
+.button-singup {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #00873e;
+  border-radius: 8px;
+  color: #fff;
+  width: 112px;
+  height: 54px;
+  margin-left: 32px;
+}
+.button-singin {
+  display: inline;
+  background-color: transparent;
+  margin: auto auto;
+  font-size: 18px;
+  font-weight: 700;
+}
+.hero-description {
+  font-size: 22px;
+  line-height: 1.5;
 }
