@@ -50,6 +50,7 @@ ul {
 
 .section-hero {
   width: 100%;
+  height: 1080px;
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -160,4 +161,23 @@ ul {
   padding-left: 1020px;
   margin-top: -55px;
   transform: rotate(4.787deg);
+}
+.santaText {
+  justify-self: center;
+  position: absolute;
+  transform: rotate(-90deg);
+  font-family: "Yeseva One";
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(
+    270deg,
+    rgba(254, 194, 142, 0.1) 4.92%,
+    rgba(206, 154, 211, 0.1) 102.95%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
 }
