@@ -115,6 +115,8 @@ ul {
   font-weight: 700;
 }
 .button-singup {
+  position: relative;
+  z-index: +1;
   font-size: 18px;
   font-weight: 700;
   background-color: #00873e;
@@ -123,7 +125,10 @@ ul {
   width: 112px;
   height: 54px;
 }
+
 .button-singin {
+  position: relative;
+  z-index: +1;
   display: inline;
   background-color: transparent;
   margin: auto auto;
@@ -158,8 +163,8 @@ ul {
 
 .img_light_bulb {
   position: absolute;
-  padding-left: 1020px;
-  margin-top: -55px;
+  padding-left: 30px;
+  margin-top: -120px;
   transform: rotate(4.787deg);
 }
 .santaText {
@@ -180,4 +185,14 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0px;
+}
+.party-flex-container {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.party-flex-container-item {
+  max-width: 50%;
 }
